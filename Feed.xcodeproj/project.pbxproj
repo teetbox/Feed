@@ -17,6 +17,9 @@
 		AC3972C120F326BF004FDD03 /* PlaceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3972C020F326BF004FDD03 /* PlaceTableViewController.swift */; };
 		AC3972C320F32757004FDD03 /* UIViewController+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3972C220F32757004FDD03 /* UIViewController+Child.swift */; };
 		AC3972C520F3335C004FDD03 /* NewFeedPlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3972C420F3335C004FDD03 /* NewFeedPlaceTableViewCell.swift */; };
+		ACE4D75420F4228500D8E77C /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4D75320F4228500D8E77C /* FeedTableViewCell.swift */; };
+		ACE4D75720F4234800D8E77C /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4D75620F4234800D8E77C /* Trip.swift */; };
+		ACE4D75920F4236400D8E77C /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4D75820F4236400D8E77C /* Place.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		AC3972C020F326BF004FDD03 /* PlaceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewController.swift; sourceTree = "<group>"; };
 		AC3972C220F32757004FDD03 /* UIViewController+Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Child.swift"; sourceTree = "<group>"; };
 		AC3972C420F3335C004FDD03 /* NewFeedPlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeedPlaceTableViewCell.swift; sourceTree = "<group>"; };
+		ACE4D75320F4228500D8E77C /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		ACE4D75620F4234800D8E77C /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		ACE4D75820F4236400D8E77C /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +72,11 @@
 			children = (
 				AC19F63B20ED97B100475786 /* AppDelegate.swift */,
 				AC19F63D20ED97B100475786 /* FeedViewController.swift */,
+				ACE4D75320F4228500D8E77C /* FeedTableViewCell.swift */,
 				AC3972BE20F32438004FDD03 /* NewFeedViewController.swift */,
 				AC3972C420F3335C004FDD03 /* NewFeedPlaceTableViewCell.swift */,
 				AC3972C020F326BF004FDD03 /* PlaceTableViewController.swift */,
+				ACE4D75520F4233500D8E77C /* Models */,
 				AC19F64D20ED996500475786 /* Extensions */,
 				AC19F64220ED97B300475786 /* Assets.xcassets */,
 				AC19F65220ED9A9B00475786 /* Launch.storyboard */,
@@ -85,6 +93,15 @@
 				AC3972C220F32757004FDD03 /* UIViewController+Child.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ACE4D75520F4233500D8E77C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACE4D75620F4234800D8E77C /* Trip.swift */,
+				ACE4D75820F4236400D8E77C /* Place.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE4D75720F4234800D8E77C /* Trip.swift in Sources */,
 				AC19F65020ED997D00475786 /* UIColor+HEXString.swift in Sources */,
 				AC19F63E20ED97B100475786 /* FeedViewController.swift in Sources */,
 				AC3972C320F32757004FDD03 /* UIViewController+Child.swift in Sources */,
@@ -164,6 +182,8 @@
 				AC3972C520F3335C004FDD03 /* NewFeedPlaceTableViewCell.swift in Sources */,
 				AC19F65120ED997D00475786 /* UIView+Constraint.swift in Sources */,
 				AC3972BF20F32438004FDD03 /* NewFeedViewController.swift in Sources */,
+				ACE4D75420F4228500D8E77C /* FeedTableViewCell.swift in Sources */,
+				ACE4D75920F4236400D8E77C /* Place.swift in Sources */,
 				AC3972C120F326BF004FDD03 /* PlaceTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

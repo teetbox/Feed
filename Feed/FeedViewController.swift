@@ -13,7 +13,7 @@ class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor.fromHEX(string: "#DEDEDE")
+        view.backgroundColor = UIColor.fromHEX(string: "#F8F8F8")
         
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(handleAdd))
         navigationItem.rightBarButtonItem = addButton
@@ -27,16 +27,23 @@ class FeedViewController: UIViewController {
         let table = UITableView(frame: .zero)
         table.dataSource = self
         table.delegate = self
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        table.separatorStyle = .none
+        table.register(FeedTableViewCell.self, forCellReuseIdentifier: "Cell")
+        table.backgroundColor = UIColor.fromHEX(string: "#F8F8F8")
         return table
     }()
     
-    var dataSource: [String] = ["Hello", "World", "Hello", "Swift"]
+    lazy var trips: [Trip] = {
+        let paris = Trip(title: "Go Paris", places: [Place(name: "Place A"), Place(name: "Place B")])
+        let hawaii = Trip(title: "Go Hawaii", places: [Place(name: "Place C"), Place(name: "Place D")])
+        let london = Trip(title: "Go London", places: [Place(name: "Place E"), Place(name: "Place F"), Place(name: "Place G")])
+        return [paris, hawaii, london]
+    }()
     
     func setupViews() {
         view.addSubview(tableView)
         view.addConstraints(format: "H:|[v0]|", views: tableView)
-        view.addConstraints(format: "V:|[v0]|", views: tableView)
+        view.addConstraints(format: "V:|[v0]-15-|", views: tableView)
     }
     
     @objc func handleAdd() {
@@ -48,12 +55,12 @@ class FeedViewController: UIViewController {
 
 extension FeedViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSource.count
+        return trips.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = dataSource[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FeedTableViewCell
+        cell.trip = trips[indexPath.row]
         
         return cell
     }
