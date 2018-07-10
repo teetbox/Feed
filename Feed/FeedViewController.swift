@@ -18,6 +18,9 @@ class FeedViewController: UIViewController {
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(handleAdd))
         navigationItem.rightBarButtonItem = addButton
         
+        let testButton = UIBarButtonItem(title: "Test", style: .plain, target: self, action: #selector(handleTest))
+        navigationItem.leftBarButtonItem = testButton
+        
         setupViews()
         
         tableView.reloadData()
@@ -28,7 +31,7 @@ class FeedViewController: UIViewController {
         table.dataSource = self
         table.delegate = self
         table.separatorStyle = .none
-        table.register(FeedTableViewCell.self, forCellReuseIdentifier: "Cell")
+        table.register(FeedTripCell.self, forCellReuseIdentifier: "Cell")
         table.backgroundColor = UIColor.fromHEX(string: "#F8F8F8")
         return table
     }()
@@ -51,6 +54,11 @@ class FeedViewController: UIViewController {
         navigationController?.pushViewController(newFeedViewController, animated: true)
     }
     
+    @objc func handleTest() {
+        let testViewController = TestViewController()
+        navigationController?.pushViewController(testViewController, animated: true)
+    }
+    
 }
 
 extension FeedViewController: UITableViewDataSource {
@@ -59,7 +67,7 @@ extension FeedViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FeedTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FeedTripCell
         cell.trip = trips[indexPath.row]
         
         return cell

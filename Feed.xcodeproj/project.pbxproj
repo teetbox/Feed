@@ -17,9 +17,15 @@
 		AC3972C120F326BF004FDD03 /* PlaceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3972C020F326BF004FDD03 /* PlaceTableViewController.swift */; };
 		AC3972C320F32757004FDD03 /* UIViewController+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3972C220F32757004FDD03 /* UIViewController+Child.swift */; };
 		AC3972C520F3335C004FDD03 /* NewFeedPlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3972C420F3335C004FDD03 /* NewFeedPlaceTableViewCell.swift */; };
-		ACE4D75420F4228500D8E77C /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4D75320F4228500D8E77C /* FeedTableViewCell.swift */; };
+		ACE4D75420F4228500D8E77C /* FeedTripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4D75320F4228500D8E77C /* FeedTripCell.swift */; };
 		ACE4D75720F4234800D8E77C /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4D75620F4234800D8E77C /* Trip.swift */; };
 		ACE4D75920F4236400D8E77C /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4D75820F4236400D8E77C /* Place.swift */; };
+		ACE4D75B20F42E0A00D8E77C /* FeedTripCellPlaceTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4D75A20F42E0A00D8E77C /* FeedTripCellPlaceTableView.swift */; };
+		ACE4D75D20F43A9800D8E77C /* FeedTripCellPlaceTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4D75C20F43A9800D8E77C /* FeedTripCellPlaceTableCell.swift */; };
+		ACE4D75F20F4695100D8E77C /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4D75E20F4695100D8E77C /* TestViewController.swift */; };
+		ACE4D76120F46C3E00D8E77C /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4D76020F46C3E00D8E77C /* TestTableViewCell.swift */; };
+		ACE4D76320F46E3D00D8E77C /* TestInnerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4D76220F46E3D00D8E77C /* TestInnerTableView.swift */; };
+		ACE4D76520F486F000D8E77C /* TestInnerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4D76420F486F000D8E77C /* TestInnerTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +41,15 @@
 		AC3972C020F326BF004FDD03 /* PlaceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewController.swift; sourceTree = "<group>"; };
 		AC3972C220F32757004FDD03 /* UIViewController+Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Child.swift"; sourceTree = "<group>"; };
 		AC3972C420F3335C004FDD03 /* NewFeedPlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeedPlaceTableViewCell.swift; sourceTree = "<group>"; };
-		ACE4D75320F4228500D8E77C /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		ACE4D75320F4228500D8E77C /* FeedTripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTripCell.swift; sourceTree = "<group>"; };
 		ACE4D75620F4234800D8E77C /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		ACE4D75820F4236400D8E77C /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		ACE4D75A20F42E0A00D8E77C /* FeedTripCellPlaceTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTripCellPlaceTableView.swift; sourceTree = "<group>"; };
+		ACE4D75C20F43A9800D8E77C /* FeedTripCellPlaceTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTripCellPlaceTableCell.swift; sourceTree = "<group>"; };
+		ACE4D75E20F4695100D8E77C /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		ACE4D76020F46C3E00D8E77C /* TestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
+		ACE4D76220F46E3D00D8E77C /* TestInnerTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInnerTableView.swift; sourceTree = "<group>"; };
+		ACE4D76420F486F000D8E77C /* TestInnerTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInnerTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,10 +84,16 @@
 			children = (
 				AC19F63B20ED97B100475786 /* AppDelegate.swift */,
 				AC19F63D20ED97B100475786 /* FeedViewController.swift */,
-				ACE4D75320F4228500D8E77C /* FeedTableViewCell.swift */,
+				ACE4D75320F4228500D8E77C /* FeedTripCell.swift */,
+				ACE4D75A20F42E0A00D8E77C /* FeedTripCellPlaceTableView.swift */,
+				ACE4D75C20F43A9800D8E77C /* FeedTripCellPlaceTableCell.swift */,
 				AC3972BE20F32438004FDD03 /* NewFeedViewController.swift */,
 				AC3972C420F3335C004FDD03 /* NewFeedPlaceTableViewCell.swift */,
 				AC3972C020F326BF004FDD03 /* PlaceTableViewController.swift */,
+				ACE4D75E20F4695100D8E77C /* TestViewController.swift */,
+				ACE4D76020F46C3E00D8E77C /* TestTableViewCell.swift */,
+				ACE4D76220F46E3D00D8E77C /* TestInnerTableView.swift */,
+				ACE4D76420F486F000D8E77C /* TestInnerTableCell.swift */,
 				ACE4D75520F4233500D8E77C /* Models */,
 				AC19F64D20ED996500475786 /* Extensions */,
 				AC19F64220ED97B300475786 /* Assets.xcassets */,
@@ -174,17 +192,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE4D75F20F4695100D8E77C /* TestViewController.swift in Sources */,
 				ACE4D75720F4234800D8E77C /* Trip.swift in Sources */,
+				ACE4D76320F46E3D00D8E77C /* TestInnerTableView.swift in Sources */,
 				AC19F65020ED997D00475786 /* UIColor+HEXString.swift in Sources */,
 				AC19F63E20ED97B100475786 /* FeedViewController.swift in Sources */,
 				AC3972C320F32757004FDD03 /* UIViewController+Child.swift in Sources */,
+				ACE4D76520F486F000D8E77C /* TestInnerTableCell.swift in Sources */,
 				AC19F63C20ED97B100475786 /* AppDelegate.swift in Sources */,
 				AC3972C520F3335C004FDD03 /* NewFeedPlaceTableViewCell.swift in Sources */,
+				ACE4D75D20F43A9800D8E77C /* FeedTripCellPlaceTableCell.swift in Sources */,
 				AC19F65120ED997D00475786 /* UIView+Constraint.swift in Sources */,
+				ACE4D75B20F42E0A00D8E77C /* FeedTripCellPlaceTableView.swift in Sources */,
 				AC3972BF20F32438004FDD03 /* NewFeedViewController.swift in Sources */,
-				ACE4D75420F4228500D8E77C /* FeedTableViewCell.swift in Sources */,
+				ACE4D75420F4228500D8E77C /* FeedTripCell.swift in Sources */,
 				ACE4D75920F4236400D8E77C /* Place.swift in Sources */,
 				AC3972C120F326BF004FDD03 /* PlaceTableViewController.swift in Sources */,
+				ACE4D76120F46C3E00D8E77C /* TestTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

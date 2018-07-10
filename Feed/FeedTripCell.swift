@@ -1,5 +1,5 @@
 //
-//  FeedTableViewCell.swift
+//  FeedTripCell.swift
 //  Feed
 //
 //  Created by Tong Tian on 2018/7/10.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FeedTableViewCell: UITableViewCell {
+class FeedTripCell: UITableViewCell {
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -30,6 +30,7 @@ class FeedTableViewCell: UITableViewCell {
         view.layer.borderWidth = 0.5
         view.layer.borderColor = UIColor.fromHEX(string: "#F1F1F1").cgColor
         view.backgroundColor = .white
+        view.clipsToBounds = true
         return view
     }()
     
@@ -50,10 +51,15 @@ class FeedTableViewCell: UITableViewCell {
         return view
     }()
     
+    let placeTable: FeedTripCellPlaceTableView = {
+        let table = FeedTripCellPlaceTableView()
+        return table
+    }()
+    
     private func setupViews() {
         addSubview(tripView)
         addConstraints(format: "H:|-15-[v0]-15-|", views: tripView)
-        addConstraints(format: "V:|-15-[v0(100)]|", views: tripView)
+        addConstraints(format: "V:|-15-[v0(200)]|", views: tripView)
         
         tripView.addSubview(titleLabel)
         tripView.addConstraints(format: "H:|-20-[v0(40)]", views: titleLabel)
@@ -67,12 +73,15 @@ class FeedTableViewCell: UITableViewCell {
         tripView.addConstraints(format: "H:|[v0]|", views: sepeatorLine)
         tripView.addConstraints(format: "V:|-45-[v0(0.5)]", views: sepeatorLine)
         
-        
+        tripView.addSubview(placeTable)
+        tripView.addConstraints(format: "H:|[v0]|", views: placeTable)
+        tripView.addConstraints(format: "V:[v0]|", views: placeTable)
+        placeTable.topAnchor.constraint(equalTo: sepeatorLine.bottomAnchor).isActive = true
     }
     
     private func setupData() {
         title.text = trip?.title
-        
+        placeTable.places = trip?.places
     }
     
     required init?(coder aDecoder: NSCoder) {
