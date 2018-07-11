@@ -21,6 +21,9 @@ class FeedViewController: UIViewController {
         let testButton = UIBarButtonItem(title: "Test", style: .plain, target: self, action: #selector(handleTest))
         navigationItem.leftBarButtonItem = testButton
         
+        let test2Button = UIBarButtonItem(title: "Test2", style: .plain, target: self, action: #selector(handleTest2))
+        navigationItem.leftBarButtonItems = [testButton, test2Button]
+        
         setupViews()
         
         tableView.reloadData()
@@ -57,6 +60,11 @@ class FeedViewController: UIViewController {
     @objc func handleTest() {
         let testViewController = TestViewController()
         navigationController?.pushViewController(testViewController, animated: true)
+    }
+    
+    @objc func handleTest2() {
+        let test2ViewController = Test2ViewController()
+        navigationController?.pushViewController(test2ViewController, animated: true)
     }
     
 }

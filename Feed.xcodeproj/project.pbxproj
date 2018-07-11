@@ -17,6 +17,9 @@
 		AC3972C120F326BF004FDD03 /* PlaceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3972C020F326BF004FDD03 /* PlaceTableViewController.swift */; };
 		AC3972C320F32757004FDD03 /* UIViewController+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3972C220F32757004FDD03 /* UIViewController+Child.swift */; };
 		AC3972C520F3335C004FDD03 /* NewFeedPlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3972C420F3335C004FDD03 /* NewFeedPlaceTableViewCell.swift */; };
+		AC6BFA2E20F5E05700EEE9F7 /* Test2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6BFA2D20F5E05700EEE9F7 /* Test2ViewController.swift */; };
+		AC6BFA3020F5F2E500EEE9F7 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6BFA2F20F5F2E500EEE9F7 /* UIView+Shadow.swift */; };
+		AC6BFA3220F5F43C00EEE9F7 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6BFA3120F5F43C00EEE9F7 /* ShadowView.swift */; };
 		ACE4D75420F4228500D8E77C /* FeedTripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4D75320F4228500D8E77C /* FeedTripCell.swift */; };
 		ACE4D75720F4234800D8E77C /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4D75620F4234800D8E77C /* Trip.swift */; };
 		ACE4D75920F4236400D8E77C /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4D75820F4236400D8E77C /* Place.swift */; };
@@ -41,6 +44,9 @@
 		AC3972C020F326BF004FDD03 /* PlaceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewController.swift; sourceTree = "<group>"; };
 		AC3972C220F32757004FDD03 /* UIViewController+Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Child.swift"; sourceTree = "<group>"; };
 		AC3972C420F3335C004FDD03 /* NewFeedPlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeedPlaceTableViewCell.swift; sourceTree = "<group>"; };
+		AC6BFA2D20F5E05700EEE9F7 /* Test2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2ViewController.swift; sourceTree = "<group>"; };
+		AC6BFA2F20F5F2E500EEE9F7 /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
+		AC6BFA3120F5F43C00EEE9F7 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		ACE4D75320F4228500D8E77C /* FeedTripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTripCell.swift; sourceTree = "<group>"; };
 		ACE4D75620F4234800D8E77C /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		ACE4D75820F4236400D8E77C /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
@@ -99,6 +105,7 @@
 				AC19F64220ED97B300475786 /* Assets.xcassets */,
 				AC19F65220ED9A9B00475786 /* Launch.storyboard */,
 				AC19F64720ED97B300475786 /* Info.plist */,
+				AC6BFA2D20F5E05700EEE9F7 /* Test2ViewController.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -109,6 +116,8 @@
 				AC19F64E20ED997D00475786 /* UIColor+HEXString.swift */,
 				AC19F64F20ED997D00475786 /* UIView+Constraint.swift */,
 				AC3972C220F32757004FDD03 /* UIViewController+Child.swift */,
+				AC6BFA2F20F5F2E500EEE9F7 /* UIView+Shadow.swift */,
+				AC6BFA3120F5F43C00EEE9F7 /* ShadowView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -196,14 +205,17 @@
 				ACE4D75720F4234800D8E77C /* Trip.swift in Sources */,
 				ACE4D76320F46E3D00D8E77C /* TestInnerTableView.swift in Sources */,
 				AC19F65020ED997D00475786 /* UIColor+HEXString.swift in Sources */,
+				AC6BFA3220F5F43C00EEE9F7 /* ShadowView.swift in Sources */,
 				AC19F63E20ED97B100475786 /* FeedViewController.swift in Sources */,
 				AC3972C320F32757004FDD03 /* UIViewController+Child.swift in Sources */,
 				ACE4D76520F486F000D8E77C /* TestInnerTableCell.swift in Sources */,
+				AC6BFA2E20F5E05700EEE9F7 /* Test2ViewController.swift in Sources */,
 				AC19F63C20ED97B100475786 /* AppDelegate.swift in Sources */,
 				AC3972C520F3335C004FDD03 /* NewFeedPlaceTableViewCell.swift in Sources */,
 				ACE4D75D20F43A9800D8E77C /* FeedTripCellPlaceTableCell.swift in Sources */,
 				AC19F65120ED997D00475786 /* UIView+Constraint.swift in Sources */,
 				ACE4D75B20F42E0A00D8E77C /* FeedTripCellPlaceTableView.swift in Sources */,
+				AC6BFA3020F5F2E500EEE9F7 /* UIView+Shadow.swift in Sources */,
 				AC3972BF20F32438004FDD03 /* NewFeedViewController.swift in Sources */,
 				ACE4D75420F4228500D8E77C /* FeedTripCell.swift in Sources */,
 				ACE4D75920F4236400D8E77C /* Place.swift in Sources */,
