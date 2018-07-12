@@ -29,6 +29,9 @@
 		ACE4D76120F46C3E00D8E77C /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4D76020F46C3E00D8E77C /* TestTableViewCell.swift */; };
 		ACE4D76320F46E3D00D8E77C /* TestInnerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4D76220F46E3D00D8E77C /* TestInnerTableView.swift */; };
 		ACE4D76520F486F000D8E77C /* TestInnerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4D76420F486F000D8E77C /* TestInnerTableCell.swift */; };
+		ACF1564B20F6C5F8000B6DB3 /* UIView+CornerShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF1564A20F6C5F8000B6DB3 /* UIView+CornerShadow.swift */; };
+		ACF1564D20F6D12A000B6DB3 /* Test2TableViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF1564C20F6D129000B6DB3 /* Test2TableViewHandler.swift */; };
+		ACF1564F20F6D13B000B6DB3 /* Test2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF1564E20F6D13B000B6DB3 /* Test2TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		ACE4D76020F46C3E00D8E77C /* TestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
 		ACE4D76220F46E3D00D8E77C /* TestInnerTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInnerTableView.swift; sourceTree = "<group>"; };
 		ACE4D76420F486F000D8E77C /* TestInnerTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInnerTableCell.swift; sourceTree = "<group>"; };
+		ACF1564A20F6C5F8000B6DB3 /* UIView+CornerShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CornerShadow.swift"; sourceTree = "<group>"; };
+		ACF1564C20F6D129000B6DB3 /* Test2TableViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2TableViewHandler.swift; sourceTree = "<group>"; };
+		ACF1564E20F6D13B000B6DB3 /* Test2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,8 @@
 				AC19F65220ED9A9B00475786 /* Launch.storyboard */,
 				AC19F64720ED97B300475786 /* Info.plist */,
 				AC6BFA2D20F5E05700EEE9F7 /* Test2ViewController.swift */,
+				ACF1564C20F6D129000B6DB3 /* Test2TableViewHandler.swift */,
+				ACF1564E20F6D13B000B6DB3 /* Test2TableViewCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -118,6 +126,7 @@
 				AC3972C220F32757004FDD03 /* UIViewController+Child.swift */,
 				AC6BFA2F20F5F2E500EEE9F7 /* UIView+Shadow.swift */,
 				AC6BFA3120F5F43C00EEE9F7 /* ShadowView.swift */,
+				ACF1564A20F6C5F8000B6DB3 /* UIView+CornerShadow.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -206,6 +215,7 @@
 				ACE4D76320F46E3D00D8E77C /* TestInnerTableView.swift in Sources */,
 				AC19F65020ED997D00475786 /* UIColor+HEXString.swift in Sources */,
 				AC6BFA3220F5F43C00EEE9F7 /* ShadowView.swift in Sources */,
+				ACF1564B20F6C5F8000B6DB3 /* UIView+CornerShadow.swift in Sources */,
 				AC19F63E20ED97B100475786 /* FeedViewController.swift in Sources */,
 				AC3972C320F32757004FDD03 /* UIViewController+Child.swift in Sources */,
 				ACE4D76520F486F000D8E77C /* TestInnerTableCell.swift in Sources */,
@@ -219,6 +229,8 @@
 				AC3972BF20F32438004FDD03 /* NewFeedViewController.swift in Sources */,
 				ACE4D75420F4228500D8E77C /* FeedTripCell.swift in Sources */,
 				ACE4D75920F4236400D8E77C /* Place.swift in Sources */,
+				ACF1564D20F6D12A000B6DB3 /* Test2TableViewHandler.swift in Sources */,
+				ACF1564F20F6D13B000B6DB3 /* Test2TableViewCell.swift in Sources */,
 				AC3972C120F326BF004FDD03 /* PlaceTableViewController.swift in Sources */,
 				ACE4D76120F46C3E00D8E77C /* TestTableViewCell.swift in Sources */,
 			);
