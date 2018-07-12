@@ -25,9 +25,9 @@ class Test2TableViewHandler: UITableView {
     }
     
     lazy var trips: [Trip] = {
-        let paris = Trip(title: "Go Paris", places:[Place(name: "Place A"), Place(name: "Place B")])
+        let paris = Trip(title: "Go Paris", places:[Place(name: "Place A"), Place(name: "Place B")], hasImage: true)
         let hawaii = Trip(title: "Go Hawaii Go Hawaii Go Hawaii Go Hawaii Go Hawaii", places: [Place(name: "Place C"), Place(name: "Place D")])
-        let london = Trip(title: "Go London", places: [Place(name: "Place E"), Place(name: "Place F"), Place(name: "Place G GGGGGGGGGGGGGGGGGGGG GGGGGG GGGGGGGGGGGG")])
+        let london = Trip(title: "Go London", places: [Place(name: "Place E"), Place(name: "Place F"), Place(name: "Place G GGGGGGGGGGGGGGGGGGGG GGGGGG GGGGGGGGGGGG")], hasImage: true)
         return [paris, hawaii, london]
     }()
     
@@ -51,6 +51,7 @@ extension Test2TableViewHandler: UITableViewDataSource {
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "PlaceCell", for: indexPath) as! Test2TableViewPlaceCell
             cell.tripTitle.text = trips[indexPath.section].title
+            cell.hasImage = trips[indexPath.section].hasImage
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! Test2TableViewCell

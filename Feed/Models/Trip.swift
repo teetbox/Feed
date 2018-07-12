@@ -11,4 +11,11 @@ import Foundation
 struct Trip {
     var title: String
     var places: [Place]
+    var hasImage: Bool
+    
+    init(title: String, places: [Place], hasImage: Bool = false) {
+        self.title = title
+        self.places = places
+        self.hasImage = hasImage
+    }
 }
